@@ -1,0 +1,30 @@
+{
+  "name": "ronmi/94lp",
+  "description": "experimental project",
+  "authors": [
+    {
+      "name": "Ronmi Ren",
+      "email": "ronmi@patrolavia.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~4",
+    "squizlabs/php_codesniffer": "*",
+    "phploc/phploc": "*",
+    "pdepend/pdepend": "*",
+    "phpmd/phpmd": "*",
+    "sebastian/phpcpd": "*"
+  },
+  "require": {
+    "fruit/core": "dev-master",
+    "fruit/routekit": "dev-master"
+  },
+  "suggest": {
+  },
+  "autoload": {
+    "psr-4": {
+      "P94LP\\": "src",
+      "P94LPTest\\": "test"
+    }
+  }
+}

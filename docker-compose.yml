@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  php:
+    image: php:7-fpm
+    volumes:
+      - './backend:/var/www/php'
+      - '~/fruit:/var/www/php/vendor/fruit'
+  nginx:
+    image: nginx
+    ports:
+      - '9468:80'
+    volumes:
+      - './nginx.conf:/etc/nginx/conf.d/default.conf'
+      - './frontend/public:/var/www/html'
